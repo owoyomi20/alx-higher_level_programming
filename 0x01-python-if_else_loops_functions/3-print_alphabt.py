@@ -1,4 +1,5 @@
 #!/usr/bin/python3
-for character in range(97, 123):
-    if (character != 101 and character != 113):
-        print("{:c}".format(character), end='')
+for a in range(97, 97 + 26):
+    if a == 113 or a == 101:
+        continue
+    print("{:c}".format(a), end='')

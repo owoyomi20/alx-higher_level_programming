@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-number = 0
-while number <= 89:
-    if number % 10 == 0:
-        number += 1 + number // 10
-    print("{:02d}".format(number), end='\n' if number == 89 else ", ")
-    number += 1
+for num in range(0, 10):
+    for num2 in range(0, 10):
+        if num is 8 and num2 is 9:
+            print("{:d}{:d}".format(num, num2))
+        elif num < num2:
+            print("{:d}{:d}".format(num, num2), end=", ")
