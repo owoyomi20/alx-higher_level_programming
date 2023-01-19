@@ -1,3 +1,3 @@
 #!/bin/bash
-# sends a request to a URL passed as an argument, and displays only the status code of the response
-curl -so /dev/null --write-out "%{http_code}" "$1"
+# sends a request to a URL passed as an arg displays status cpde
+curl -s -w "%{http_code}" "$1" -o /dev/null
